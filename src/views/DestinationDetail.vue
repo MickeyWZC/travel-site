@@ -266,15 +266,14 @@ const currentImage = computed(() => {
   return destination.value.image;
 });
 
-const handleBooking = () => {
-  if (destination.value) {
+const handleBooking = (): void => {
+  if (destination.value?.id) {
     bookingStore.updateBookingData({ destination: destination.value.id });
     router.push('/booking');
   }
 };
 
 onMounted(() => {
-  // 滚动到顶部
-  window.scrollTo(0, 0);
+  // Scroll to top is handled by router scrollBehavior
 });
 </script>
