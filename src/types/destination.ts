@@ -1,0 +1,11 @@
+export interface Destination {
+  id: string;
+  name: string;
+  description: string;
+  image: string;
+  price: number;
+  priceUnit: string;
+  location: string;
+  rating: number;
+}
+
