@@ -32,8 +32,7 @@ const bookingStore = useBookingStore();
 const destinations = computed(() => destinationsStore.destinations);
 
 const handleSelect = (id: string) => {
-  bookingStore.updateBookingData({ destination: id });
-  router.push('/booking');
+  router.push(`/destination/${id}`);
 };
 </script>
 
