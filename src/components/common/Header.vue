@@ -14,7 +14,7 @@
         <div class="hidden md:flex items-center space-x-8">
           <router-link to="/" class="text-gray-700 hover:text-blue-500 transition">首页</router-link>
           <a href="#destinations" class="text-gray-700 hover:text-blue-500 transition">目的地</a>
-          <a href="#about" class="text-gray-700 hover:text-blue-500 transition">关于我们</a>
+          <router-link to="/about" class="text-gray-700 hover:text-blue-500 transition">关于我们</router-link>
           <a href="#contact" class="text-gray-700 hover:text-blue-500 transition">联系方式</a>
           <router-link
             to="/booking"
@@ -41,7 +41,7 @@
         <div class="flex flex-col space-y-4">
           <router-link to="/" class="text-gray-700 hover:text-blue-500 transition" @click="toggleMenu">首页</router-link>
           <a href="#destinations" class="text-gray-700 hover:text-blue-500 transition" @click="toggleMenu">目的地</a>
-          <a href="#about" class="text-gray-700 hover:text-blue-500 transition" @click="toggleMenu">关于我们</a>
+          <router-link to="/about" class="text-gray-700 hover:text-blue-500 transition" @click="toggleMenu">关于我们</router-link>
           <a href="#contact" class="text-gray-700 hover:text-blue-500 transition" @click="toggleMenu">联系方式</a>
           <router-link
             to="/booking"
