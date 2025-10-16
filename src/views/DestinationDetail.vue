@@ -274,6 +274,6 @@ const handleBooking = (): void => {
 };
 
 onMounted(() => {
-  // Scroll to top is handled by router scrollBehavior
+  // Scroll to top is handled by router.scrollBehavior configuration
 });
 </script>
